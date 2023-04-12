@@ -70,7 +70,6 @@ fun main() {
     val num1AndNum21 = num1AndNum2(20, 40) { n1, n2 ->
         n1 + n2
     }
-    s beginWith "sss"
     println("====$num1AndNum2")
 
     val oneClass = OneClass()
