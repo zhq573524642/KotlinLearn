@@ -7,11 +7,15 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.core.app.NotificationCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.zhq.ktlearn.databinding.ActivityMainBinding
 import com.zhq.ktlearn.ui.fragment.*
+import com.zhq.ktlearn.utils.max
+import com.zhq.ktlearn.utils.showSnackbar
+import com.zhq.ktlearn.utils.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {

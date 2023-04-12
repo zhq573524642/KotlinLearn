@@ -1,0 +1,25 @@
+package com.zhq.ktlearn.utils
+
+/**
+ * @Author ZhangHuiQiang
+ * @Date 2023/4/12 15:46
+ * Description
+ */
+fun max(vararg nums: Int): Int {
+    var maxNum = Int.MIN_VALUE
+    for (num in nums) {
+        maxNum = kotlin.math.max(num, maxNum)
+    }
+    return maxNum
+}
+
+fun <T : Comparable<T>> max(vararg nums: T): T {
+    if (nums.isEmpty()) throw RuntimeException("Params can not be empty.")
+    var maxNum = nums[0]
+    for (num in nums) {
+        if (num > maxNum) {
+            maxNum = num
+        }
+    }
+    return maxNum
+}
