@@ -1,8 +1,6 @@
 package com.zhq.ktlearn.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.zhq.ktlearn.BaseActivity
+import com.zhq.commonlib.base.BaseActivity
 import com.zhq.ktlearn.MainActivity
 import com.zhq.ktlearn.R
 import com.zhq.ktlearn.databinding.ActivityLoginBinding

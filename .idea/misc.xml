@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/drawable/shape_tag1.xml" value="0.1355" />
+        <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/drawable/shape_tag2.xml" value="0.1355" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/drawable/tab_main1.xml" value="0.1715" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/drawable/tab_main2.xml" value="0.1715" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/drawable/tab_main3.xml" value="0.1715" />
@@ -10,14 +12,19 @@
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/drawable/tab_main5.xml" value="0.1715" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/activity_login.xml" value="0.1625" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/activity_main.xml" value="0.14791666666666667" />
+        <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/foot_rv.xml" value="0.1625" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/fragment_architecture.xml" value="0.16145833333333334" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/fragment_home.xml" value="0.16145833333333334" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/fragment_mine.xml" value="0.16145833333333334" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/fragment_navigation_content.xml" value="0.16145833333333334" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/fragment_official_accounts.xml" value="0.1625" />
+        <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/item_home_rv.xml" value="0.1625" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/item_list_view.xml" value="0.1625" />
+        <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/layout/last_rv.xml" value="0.1625" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/menu/main.xml" value="0.1625" />
         <entry key="..\:/myFile/ZhqKtLearn/app/src/main/res/xml/file_paths.xml" value="0.1625" />
+        <entry key="..\:/myFile/ZhqKtLearn/commonLib/src/main/res/drawable/shape_10dp_white.xml" value="0.152" />
+        <entry key="..\:/myFile/ZhqKtLearn/commonLib/src/main/res/layout/common_loading_dialog.xml" value="0.1625" />
       </map>
     </option>
   </component>

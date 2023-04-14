@@ -1,8 +1,7 @@
 package com.zhq.ktlearn.ui.fragment
 
 import com.zhq.ktlearn.R
-import com.zhq.ktlearn.base.BaseFragment
-import com.zhq.ktlearn.base.BaseVMFragment
+import com.zhq.commonlib.base.BaseVMFragment
 import com.zhq.ktlearn.databinding.FragmentMineBinding
 
 /**
@@ -18,6 +17,10 @@ class MineFragment : BaseVMFragment<FragmentMineBinding>() {
     }
 
     override fun initView() {
+
+    }
+
+    override fun observe() {
 
     }
 

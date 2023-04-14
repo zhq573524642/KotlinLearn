@@ -1,21 +1,15 @@
 package com.zhq.ktlearn
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.content.Context
 import android.content.Intent
 import android.graphics.Color
-import android.os.Build
-import android.os.Bundle
-import android.widget.ImageView
-import androidx.core.app.NotificationCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.zhq.commonlib.base.BaseActivity
+import com.zhq.commonlib.utils.ToastUtils.showToast
 import com.zhq.ktlearn.databinding.ActivityMainBinding
+import com.zhq.ktlearn.ui.activity.viewmodel.MainViewModel
 import com.zhq.ktlearn.ui.fragment.*
-import com.zhq.ktlearn.utils.max
-import com.zhq.ktlearn.utils.showSnackbar
-import com.zhq.ktlearn.utils.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
@@ -27,12 +21,13 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     val TAB_MAIN_4: Int = 4;
     private lateinit var currentFragment: Fragment
 
-
     override fun getLayoutId(): Int {
         return R.layout.activity_main
     }
 
     override fun initView() {
+        val mainViewModel =
+            ViewModelProvider(this).get(MainViewModel::class.java)
         initFragment(0)
         bottomNavigationView.setOnNavigationItemSelectedListener(bottomNavigationSelectedListener)
         val badge = bottomNavigationView.getOrCreateBadge(R.id.tab_1)
@@ -130,5 +125,16 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+    }
+
+
+    private var exitTime: Long = 0
+    override fun onBackPressed() {
+        if (System.currentTimeMillis() - exitTime > 2000) {
+            "再按一次退出".showToast()
+            exitTime = System.currentTimeMillis()
+        } else {
+            super.onBackPressed()
+        }
     }
 }

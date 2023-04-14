@@ -9,11 +9,9 @@ import android.widget.ArrayAdapter
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.zhq.ktlearn.R
-import com.zhq.ktlearn.base.BaseFragment
-import com.zhq.ktlearn.base.BaseVMFragment
+import com.zhq.commonlib.base.BaseVMFragment
 import com.zhq.ktlearn.databinding.FragmentOfficialAccountsBinding
 import kotlinx.android.synthetic.main.fragment_official_accounts.*
-import kotlin.math.log
 
 /**
  * @Author ZhangHuiQiang
@@ -83,6 +81,10 @@ class OfficialAccountsFragment : BaseVMFragment<FragmentOfficialAccountsBinding>
             contactsAdapter.notifyDataSetChanged()
             close()
         }
+    }
+
+    override fun observe() {
+
     }
 
 }

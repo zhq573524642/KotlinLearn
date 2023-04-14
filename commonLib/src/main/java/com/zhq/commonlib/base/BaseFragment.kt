@@ -1,4 +1,4 @@
-package com.zhq.ktlearn.base
+package com.zhq.commonlib.base
 
 import android.content.Context
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
+import com.zhq.commonlib.utils.LoadingUtil
 
 
 /**
@@ -17,12 +18,9 @@ import androidx.fragment.app.Fragment
  */
 abstract class BaseFragment<T : ViewDataBinding> : Fragment() {
 
+    val TAG: String = this.javaClass.simpleName
     lateinit var mContext: Context
     lateinit var mBinding: T
-
-    companion object {
-         val TAG: String = this.javaClass.simpleName
-    }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -54,10 +52,10 @@ abstract class BaseFragment<T : ViewDataBinding> : Fragment() {
     }
 
     fun showLoading() {
-
+        LoadingUtil.showLoadingDialog(mContext, true)
     }
 
     fun dismissLoading() {
-
+        LoadingUtil.dismissLoadingDialog()
     }
 }
